@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲜佛手图片</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .placeholder {
+            max-width: 700px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .product-showcase {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .product-icon {
+            font-size: 5em;
+            color: #8BC34A;
+            margin-bottom: 20px;
+        }
+        .feature-list {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background: rgba(255,255,255,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+            min-width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+        .feature-text {
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .quality-badge {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #333;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1>鲜佛手</h1>
+        <p>新鲜采摘的优质佛手果实，保持最佳品质和营养价值</p>
+        
+        <div class="product-showcase">
+            <div class="product-icon">
+                <i class="fas fa-lemon"></i>
+            </div>
+            <div class="quality-badge">
+                <i class="fas fa-star"></i> 优质新鲜 <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                <div class="feature-text">生态种植</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <div class="feature-text">手工采摘</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-snowflake"></i></div>
+                <div class="feature-text">冷链配送</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+                <div class="feature-text">品质保证</div>
+            </div>
+        </div>
+        
+        <p>保留佛手最原始的营养成分和独特风味</p>
+    </div>
+    <div class="image-info">图片占位符: products/fresh-foshou.jpg</div>
+</body>
+</html>

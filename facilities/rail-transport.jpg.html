@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轨道运输系统图片</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #546E7A, #263238);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .placeholder {
+            max-width: 800px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .facility-showcase {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .facility-icon {
+            font-size: 5em;
+            color: #90A4AE;
+            margin-bottom: 20px;
+        }
+        .specs-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .spec-item {
+            background: rgba(255,255,255,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+            min-width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .spec-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .spec-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .spec-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        .features {
+            background: rgba(255,255,255,0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .features h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #78909C;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1>轨道运输系统</h1>
+        <p>现代化轨道运输设施，提高运输效率</p>
+        
+        <div class="facility-showcase">
+            <div class="facility-icon">
+                <i class="fas fa-train"></i>
+            </div>
+        </div>
+        
+        <div class="specs-container">
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-ruler-combined"></i></div>
+                <div class="spec-value">1.02公里</div>
+                <div class="spec-label">轨道总长度</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <div class="spec-value">5-10km/h</div>
+                <div class="spec-label">运行速度</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-boxes"></i></div>
+                <div class="spec-value">500kg</div>
+                <div class="spec-label">载重能力</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>系统特点</h3>
+            <ul>
+                <li>采用轻量化轨道设计，安装便捷</li>
+                <li>电力驱动，环保节能</li>
+                <li>智能化控制系统，操作简便</li>
+                <li>覆盖主要种植区域，运输便捷</li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-info">图片占位符: facilities/rail-transport.jpg</div>
+</body>
+</html>

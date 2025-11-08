@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佛手产品总览</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #66BB6A, #2E7D32);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .placeholder {
+            max-width: 900px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .products-grid {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 15px;
+            min-width: 200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .product-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .product-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .product-count {
+            font-size: 1em;
+            opacity: 0.8;
+        }
+        .total-info {
+            background: rgba(255,255,255,0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .total-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #FFD700;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1>佛手产品总览</h1>
+        <p>永泰县兴禾生态家庭农场专注于佛手种植，提供优质特色农产品</p>
+        
+        <div class="total-info">
+            <div class="total-number">4500株</div>
+            <p>佛手总种植数量</p>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-item">
+                <div class="product-icon"><i class="fas fa-seedling"></i></div>
+                <div class="product-name">广佛手</div>
+                <div class="product-count">3700株</div>
+            </div>
+            <div class="product-item">
+                <div class="product-icon"><i class="fas fa-leaf"></i></div>
+                <div class="product-name">川佛手</div>
+                <div class="product-count">500株</div>
+            </div>
+            <div class="product-item">
+                <div class="product-icon"><i class="fas fa-tree"></i></div>
+                <div class="product-name">建佛手</div>
+                <div class="product-count">300株</div>
+            </div>
+        </div>
+        
+        <p>采用生态种植方式，品质优良，深受市场欢迎</p>
+    </div>
+    <div class="image-info">图片占位符: products/foshou-overview.jpg</div>
+</body>
+</html>

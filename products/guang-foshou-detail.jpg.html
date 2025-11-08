@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广佛手详情图片</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .placeholder {
+            max-width: 800px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .specs-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .spec-item {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+            min-width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .spec-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #FFF;
+        }
+        .spec-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .spec-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        .features {
+            background: rgba(255,255,255,0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .features h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #FFF;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #FFD700;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1>广佛手详情</h1>
+        <p>兴禾生态农场的主要产品品种，品质优良</p>
+        
+        <div class="specs-container">
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-seedling"></i></div>
+                <div class="spec-value">3700株</div>
+                <div class="spec-label">种植数量</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-weight"></i></div>
+                <div class="spec-value">150-300克</div>
+                <div class="spec-label">单果重量</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="spec-value">8-10月</div>
+                <div class="spec-label">采摘时间</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>产品特点</h3>
+            <ul>
+                <li>果实呈金黄色，外形似佛手，香气浓郁</li>
+                <li>果肉厚实，肉质细嫩，口感独特</li>
+                <li>富含多种维生素和矿物质，营养价值高</li>
+                <li>具有理气化痰、止咳平喘等功效</li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-info">图片占位符: products/guang-foshou-detail.jpg</div>
+</body>
+</html>

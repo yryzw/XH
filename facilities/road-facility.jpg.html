@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道路设施图片</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #607D8B, #37474F);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .placeholder {
+            max-width: 800px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            margin: 10px 0;
+        }
+        .image-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .facility-showcase {
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+        .facility-icon {
+            font-size: 5em;
+            color: #B0BEC5;
+            margin-bottom: 20px;
+        }
+        .specs-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .spec-item {
+            background: rgba(255,255,255,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 10px;
+            min-width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .spec-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .spec-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .spec-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        .features {
+            background: rgba(255,255,255,0.3);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .features h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #FFD700;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #90A4AE;
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="placeholder">
+        <h1>道路设施</h1>
+        <p>现代化农场道路基础设施，确保交通便利</p>
+        
+        <div class="facility-showcase">
+            <div class="facility-icon">
+                <i class="fas fa-road"></i>
+            </div>
+        </div>
+        
+        <div class="specs-container">
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-ruler-horizontal"></i></div>
+                <div class="spec-value">1.3公里</div>
+                <div class="spec-label">水泥道路硬化</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-arrows-alt-h"></i></div>
+                <div class="spec-value">3-4米</div>
+                <div class="spec-label">道路宽度</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-icon"><i class="fas fa-weight-hanging"></i></div>
+                <div class="spec-value">10吨+</div>
+                <div class="spec-label">承重能力</div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>设施特点</h3>
+            <ul>
+                <li>采用高强度水泥铺设，耐用性强</li>
+                <li>道路覆盖整个农场，交通便利</li>
+                <li>支持大型农业机械通行</li>
+                <li>完善的排水系统，避免积水</li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-info">图片占位符: facilities/road-facility.jpg</div>
+</body>
+</html>

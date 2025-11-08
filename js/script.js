@@ -26,80 +26,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 移动端菜单切换
-    const createMobileMenu = function() {
-        const navbar = document.querySelector('.navbar .container');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        // 创建菜单按钮
-        const menuButton = document.createElement('button');
-        menuButton.className = 'mobile-menu-btn';
-        menuButton.innerHTML = '<i class="fas fa-bars"></i>';
-        
-        // 添加移动端菜单样式
-        const style = document.createElement('style');
-        style.textContent = `
-            .mobile-menu-btn {
-                display: none;
-                background: none;
-                border: none;
-                font-size: 1.5rem;
-                color: #2c5530;
-                cursor: pointer;
-                padding: 0.5rem;
-            }
-            
-            @media (max-width: 768px) {
-                .mobile-menu-btn {
-                    display: block;
-                }
-                
-                .nav-menu {
-                    display: none;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background-color: white;
-                    flex-direction: column;
-                    padding: 1rem 0;
-                    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-                }
-                
-                .nav-menu.active {
-                    display: flex;
-                }
-                
-                .navbar .container {
-                    position: relative;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // 插入菜单按钮
-        navbar.insertBefore(menuButton, navMenu);
-        
+    // 移动端汉堡菜单切换
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (navToggle && navMenu) {
         // 切换菜单显示
-        menuButton.addEventListener('click', function() {
+        navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
-            const icon = menuButton.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
+            navToggle.classList.toggle('active');
+            
+            // 防止页面滚动
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
         });
         
         // 点击菜单项后关闭菜单
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
-                const icon = menuButton.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
+                navToggle.classList.remove('active');
+                document.body.style.overflow = '';
             });
         });
-    };
-    
-    createMobileMenu();
+        
+        // 点击菜单外部区域关闭菜单
+        document.addEventListener('click', function(event) {
+            const isClickInsideMenu = navMenu.contains(event.target);
+            const isClickOnToggle = navToggle.contains(event.target);
+            
+            if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // 窗口大小改变时重置菜单状态
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 
     // 图片懒加载
     const lazyLoadImages = function() {
