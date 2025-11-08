@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="联系永泰县兴禾生态家庭农场，获取产品信息、合作机会和农业咨询服务">
+    <meta name="keywords" content="联系我们,佛手产品,合作咨询,永泰县兴禾生态家庭农场,联系方式">
+    <meta name="author" content="永泰县兴禾生态家庭农场">
+    <title>联系我们 - 永泰县兴禾生态家庭农场</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <h1>兴禾生态农场</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="facilities.html">设施展示</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="wechat-link"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="douyin-link"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>联系我们</h1>
+                <p>欢迎与我们联系，获取更多产品信息和合作机会</p>
+            </div>
+        </section>
+
+        <!-- 联系我们内容 -->
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- 联系信息 -->
+                    <div class="contact-info">
+                        <h2>联系信息</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-text">
+                                    <h3>地址</h3>
+                                    <p>福建省福州市永泰县</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="info-text">
+                                    <h3>电话</h3>
+                                    <p>138-XXXX-XXXX</p>
+                                    <p>0591-XXXX-XXXX</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info-text">
+                                    <h3>邮箱</h3>
+                                    <p>xinghefarm@example.com</p>
+                                    <p>info@xinghefarm.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="info-text">
+                                    <h3>营业时间</h3>
+                                    <p>周一至周六：8:00 - 18:00</p>
+                                    <p>周日：休息</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 社交媒体 -->
+                        <div class="social-media-section">
+                            <h3>关注我们</h3>
+                            <div class="social-icons">
+                                <a href="#" class="social-icon wechat">
+                                    <i class="fab fa-weixin"></i>
+                                    <span>微信公众号</span>
+                                </a>
+                                <a href="#" class="social-icon douyin">
+                                    <i class="fab fa-tiktok"></i>
+                                    <span>抖音号</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 地图 -->
+                        <div class="map-container">
+                            <h3>农场位置</h3>
+                            <div class="map-placeholder">
+                                <img src="images/farm-map.jpg" alt="农场位置地图">
+                                <p>点击地图查看详细位置</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 联系表单 -->
+                    <div class="contact-form">
+                        <h2>留言咨询</h2>
+                        <p>如果您对我们的产品或服务有任何疑问，请填写以下表单，我们会尽快与您联系。</p>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">电话 *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">咨询类型</label>
+                                <select id="subject" name="subject">
+                                    <option value="">请选择咨询类型</option>
+                                    <option value="product">产品咨询</option>
+                                    <option value="cooperation">合作洽谈</option>
+                                    <option value="visit">参观预约</option>
+                                    <option value="other">其他咨询</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">留言内容 *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="请详细描述您的需求或问题..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">提交留言</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">常见问题</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>你们的佛手产品如何购买？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以通过以下方式购买我们的佛手产品：</p>
+                            <ul>
+                                <li>直接到农场参观购买</li>
+                                <li>通过电话或微信联系订购</li>
+                                <li>在合作经销商处购买</li>
+                                <li>通过我们的电商平台购买</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>是否提供批发业务？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，我们提供批发业务。对于批量采购的客户，我们会提供更优惠的价格。欢迎经销商、餐饮企业、药店等合作伙伴与我们联系洽谈。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>可以参观农场吗？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>欢迎参观我们的农场！建议提前预约，我们会安排专人接待，为您详细介绍我们的种植过程和产品特色。参观时间为工作日的9:00-17:00。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>产品的保质期是多久？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>不同产品的保质期不同：</p>
+                            <ul>
+                                <li>鲜佛手：冷藏条件下7-10天</li>
+                                <li>干佛手：干燥环境下1-2年</li>
+                                <li>佛手茶：密封条件下2年</li>
+                                <li>佛手蜜饯：密封条件下1年</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴 -->
+        <section class="partners-section">
+            <div class="container">
+                <h2 class="section-title">合作伙伴</h2>
+                <p class="partners-intro">我们欢迎各类合作伙伴，共同发展佛手产业</p>
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>经销商</h3>
+                        <p>欢迎各地经销商加入我们的销售网络，共同推广优质佛手产品。</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>餐饮企业</h3>
+                        <p>为餐饮企业提供优质佛手原料，共同开发特色菜品。</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-mortar-pestle"></i>
+                        </div>
+                        <h3>药企合作</h3>
+                        <p>与制药企业合作，提供优质佛手原料，共同开发健康产品。</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>礼品定制</h3>
+                        <p>为企业提供定制化礼品服务，打造特色品牌形象。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>永泰县兴禾生态家庭农场创建于2021年，专业种植佛手，致力于提供优质特色农产品。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 福建省福州市永泰县</p>
+                    <p><i class="fas fa-phone"></i> 联系电话：138-XXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> 邮箱：xinghefarm@example.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="facilities.html">设施展示</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 永泰县兴禾生态家庭农场. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
